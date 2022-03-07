@@ -1,0 +1,238 @@
+:root {
+    --color1: #262626;
+    --color2: #3D3D3D;
+    --color2-transparent: #3d3d3d7e;
+    --color3: #4F4F4F;
+    --color4: #7F7F7F;
+    --color4-transparent: #7f7f7f5b;
+    --color5: #393939;
+    --color6: #1E1E1E;
+}
+
+@font-face {
+    font-family: 'Platonick';
+    src: url("../assets/fonts/platonick-normal.regular.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+body {
+    background-color: var(--color6);
+    font-family: 'Platonick', 'Arial', Times, serif;
+    color: var(--color5);
+    font-weight: 100;
+}
+
+/* header*/
+header .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
+    color: var(--color4);
+    font-size: 55px;
+    cursor: default;
+    font-weight: 100;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--color4);
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+header nav a:hover {
+    color: var(--color3);
+}
+
+header img {
+    width: 60px;
+    height: auto;
+    padding-left: 10px;
+    filter: invert(70%);
+    margin-bottom: 5px;
+}
+
+/* main */
+main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+}
+
+/* filme destaque*/
+.filme-destaque {
+
+    border-radius: 45px;
+    font-size: 16px;
+    background: linear-gradient(rgba(57, 57, 57, 1), rgba(57, 57, 57, .1)), url('../img/Voyagedanslalune1.jpg');
+    background-size: cover;
+    color: var(--color4);
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-destaque .titulo {
+    margin-top: 5%;
+    font-size: 50px;
+    font-weight: 200;
+    color: var(--color4);
+
+}
+
+.filme-destaque .descricao {
+    font-size: 20px;
+    color: var(--color6);
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color4-transparent);
+    border-radius: 5px;
+}
+
+.botao {
+    background-color: var(--color4-transparent);
+    border: none;
+    border-radius: 5px;
+    color: var(--color6);
+
+    padding: 10px 25px;
+    margin-right: 15px;
+
+
+    cursor: pointer;
+    transition: .5s ease all;
+    font-size: 20px;
+}
+
+.botao:hover {
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+/* filmes populares e por décadas*/
+.carousel-movies {
+    background-color: var(--color4);
+    padding-bottom: 15px;
+    border-radius: 15px;
+}
+
+.carousel-background {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 50px;
+    max-width: 1600px;
+    border-radius: 15%;
+}
+
+.carousel-movies h3 {
+    /*titulo*/
+    padding-left: 15px;
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    cursor: default;
+    font-weight: 100;
+}
+
+.carousel-movies .item {
+    height: 300px;
+    cursor: pointer;
+}
+
+.carousel-movies .img-thumbnail {
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(57, 57, 57, 1), rgba(57, 57, 57, .7));
+}
+
+.carousel-movies img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 35%;
+}
+
+.popular {
+    background-color: var(--color3);
+    border-radius: 0;
+    color: var(--color4);
+}
+
+/* sources */
+.sources-link {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color3);
+    font-size: 35px;
+    color: var(--color4);
+    border-radius: 15px;
+}
+
+.sources-link a {
+    text-decoration: none;
+    font-size: 35px;
+    color: var(--color4);
+}
+
+.sources-link a:hover {
+    color: var(--color6);
+}
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    padding: 15px 0px;
+    font-size: 25px;
+    background-color: var(--color4);
+}
+
+.footer img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,55 @@
+:root {
+    --color1: #262626;
+    --color2: #3D3D3D;
+    --color2-transparent: #3d3d3d7e;
+    --color3: #4F4F4F;
+    --color4: #7F7F7F;
+    --color4-transparent: #7f7f7f5b;
+    --color5: #393939;
+    --color6: #1E1E1E;
+}
+
+@font-face {
+    font-family: 'Platonick';
+    src: url("../assets/fonts/platonick-normal.regular.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color1);
+    font-family: 'Arial', Times, serif;
+    color: var(--color4);
+}
+
+header {
+    text-align: left;
+    font-size: 32px;
+    margin: 10px 50px;
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+i {
+    width: auto;
+    cursor: pointer;
+}
+
+#movie-title {
+    font-size: 50px;
+    font-family: 'Platonick', 'Arial', Times, serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+}
